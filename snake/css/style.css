@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bungee', cursive;
+    background-image: url("http://hdwallpapersbuzz.com/wp-content/uploads/2017/03/80s-wallpaper-images-13.jpg");
+    background-size: cover;
+}
+
+.divisor {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    height: 0;
+    border-bottom: 1px solid #fff;
+}
+
+#menu {    
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 90%;
+    background: rgba(0,0,0,0.8);
+    padding: 40px 10px;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+#menu .btn {
+    width: 200px;
+    margin-bottom: 8px;
+    max-width: 100%;
+    font-size: 18px;
+    font-family: 'Bungee', cursive;
+    border: 3px solid #fff;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+#menu .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+#menu h1 {    
+    padding-bottom: 0px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#menu #title {
+    color: #fff;
+}
+
+#gameover {
+    display: none;
+    color: red;
+}
+
+
+#board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    background: rgba(0,0,0,0.5)
+}
+
+.food {
+    position: absolute;
+    background: orange;
+}
+
+#snake .body-piece {
+    background: #fff;
+    position: absolute;
+    z-index: 1000;
+}

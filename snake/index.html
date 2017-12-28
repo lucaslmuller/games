@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/Board.js"></script>
+    <script src="js/Food.js"></script>
+    <script src="js/Snake.js"></script>
+
+    <script src="js/Game.js"></script>
+</head>
+<body>
+
+    <div id="menu">
+        <h1 id="title">SNAKE</h1>
+        <h1 id="gameover">Game over</h1>
+        <span class="divisor"></span>
+
+        <button class="btn" id="easy">Fácil</button>
+        <button class="btn" id="normal">Normal</button>
+        <button class="btn" id="medium">Médio</button>
+        <button class="btn" id="hard">Difícil</button>
+        <button class="btn" id="expert">Expert</button>
+    </div>
+
+    <div id="board">
+        <div id="snake">
+            
+        </div>
+
+        <div id="foods">
+            <!-- <div class="food"></div> -->
+        </div>
+
+    </div>
+
+    <script>
+        var game = new Game({
+            boardWidth: 30,
+            boardHeight: 30,
+            blockWidth: 20,
+            blockHeight: 20,
+            speed: "medium"
+        });
+    </script>
+    
+</body>
+</html>
