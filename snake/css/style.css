@@ -74,6 +74,15 @@ body {
     background: rgba(0,0,0,0.5)
 }
 
+#board #score {
+    background: #fff;
+    position: absolute;
+    width: 130px;
+    padding: 0 5px;
+    left: 100%;
+    top: -2px;
+}
+
 .food {
     position: absolute;
     background: orange;

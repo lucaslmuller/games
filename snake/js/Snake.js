@@ -65,7 +65,8 @@ function Snake(blockWidth, blockHeight) {
     }
 
     this.eat = function() {
-        this.length++;        
+        this.length++;     
+        document.getElementById("score").innerHTML = "Score: " + (this.length - 1) * 5;        
     }
     
 }
