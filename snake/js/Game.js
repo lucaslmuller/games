@@ -103,6 +103,7 @@ function Game(config) {
 
     function start(config) {
         document.getElementById('foods').innerHTML = "";
+        document.getElementById("score").innerHTML = "Score: 0";
         _snake  = new Snake(config.blockWidth, config.blockHeight);
         _food   = new Food(_board, _snake, config.blockWidth, config.blockHeight);
 
