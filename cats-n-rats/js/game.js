@@ -1,6 +1,6 @@
 const boardDimensions = 5;
-const maxCats = 1;
-const maxRats = 1;
+const maxCats = 3;
+const maxRats = 5;
 
 let board = [];
 let boardElm = [];
