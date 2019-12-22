@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#board {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+}
+
+#set-value {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+}
+
+#set-value label {
+    position: relative;
+    border: 2px solid #888;
+}
+
+#set-value label div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#set-value label input:checked + div {
+    background: #2ecc71;
+}
+
+#set-value input {
+    display: none;
+}
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.line {
+    display: block;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.line:nth-child(even) .cell:nth-child(even),
+.line:nth-child(odd) .cell:nth-child(odd) {
+    background: #EEE;
+}
+
+.cell {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.invalid {
+    color: #FFF;
+    background: #F558 !important;
+}
