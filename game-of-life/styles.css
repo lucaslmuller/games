@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    border: 1px solid;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#game .col {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+#game .col .cell {
+    border: 1px solid #BBB;
+    border-top-width: 0;
+    border-left-width: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#game .col .cell.fill {
+    background-color: #000;
+}
+
+#game .col .cell:last-child {
+    border-bottom-width: 0;
+}
+
+#game .col:last-child .cell {
+    border-right-width: 0;
+}

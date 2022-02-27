@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of life</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+    </div>
+
+    <div id="controls">
+        <button id="btn-reset">Reset (R)</button>
+        <button id="btn-stop">Stop (Space)</button>
+        <button id="btn-start">Start (Space)</button>
+        <button id="btn-step">Step (N)</button>
+
+
+        <div>
+            <input type="range" min="50" max="1000" step="100" class="slider" id="speed-control">
+        </div>
+        <p id="info"></p>
+    </div>
+    <script src="./game-of-life.js"></script>
+</body>
+</html>
